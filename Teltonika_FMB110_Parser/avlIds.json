@@ -1,0 +1,2293 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Digital Input 1",
+    "signed": false,
+    "bytes": 1,
+    "unit": "logic"
+  },
+  "2": {
+    "id": 2,
+    "name": "Digital Input 2",
+    "signed": false,
+    "bytes": 1,
+    "unit": "logic"
+  },
+  "3": {
+    "id": 3,
+    "name": "Digital Input 3",
+    "signed": false,
+    "bytes": 1,
+    "unit": "logic"
+  },
+  "4": {
+    "id": 4,
+    "name": "Pulse Counter Din1",
+    "signed": false,
+    "bytes": 4,
+    "unit": "count"
+  },
+  "5": {
+    "id": 5,
+    "name": "Pulse Counter Din2",
+    "signed": false,
+    "bytes": 2,
+    "unit": "count"
+  },
+  "6": {
+    "id": 6,
+    "name": "Analog Input 2",
+    "signed": false,
+    "bytes": 2,
+    "unit": "voltage"
+  },
+  "8": {
+    "id": 8,
+    "name": "Authorized iButton",
+    "signed": false,
+    "bytes":"unknown",
+    "unit": ""
+  },
+  "9": {
+    "id": 9,
+    "name": "Analog Input 1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "10": {
+    "id": 10,
+    "name": "SD Status",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "11": {
+    "id": 11,
+    "name": "ICCID1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "12": {
+    "id": 12,
+    "name": "Fuel Used GPS",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "13": {
+    "id": 13,
+    "name": "Fuel Rate GPS",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "14": {
+    "id": 14,
+    "name": "ICCID2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "15": {
+    "id": 15,
+    "name": "Eco Score",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "16": {
+    "id": 16,
+    "name": "Total Odometer",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "17": {
+    "id": 17,
+    "name": "Axis X",
+    "signed": true,
+    "bytes": 2,
+    "unit": "mG"
+  },
+  "18": {
+    "id": 18,
+    "name": "Axis Y",
+    "signed": true,
+    "bytes": 2,
+    "unit": "mG"
+  },
+  "19": {
+    "id": 19,
+    "name": "Axis Z",
+    "signed": true,
+    "bytes": 2,
+    "unit": "mG"
+  },
+  "20": {
+    "id": 20,
+    "name": "BLE Battery #2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "21": {
+    "id": 21,
+    "name": "GSM Signal",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "22": {
+    "id": 22,
+    "name": "BLE Battery #3",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "23": {
+    "id": 23,
+    "name": "BLE Battery #4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "24": {
+    "id": 24,
+    "name": "Speed",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "25": {
+    "id": 25,
+    "name": "BLE Temperature #1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "26": {
+    "id": 26,
+    "name": "BLE Temperature #2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "27": {
+    "id": 27,
+    "name": "BLE Temperature #3",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "28": {
+    "id": 28,
+    "name": "BLE Temperature #4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "29": {
+    "id": 29,
+    "name": "BLE Battery #1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "30": {
+    "id": 30,
+    "name": "Number of DTC",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "31": {
+    "id": 31,
+    "name": "Engine Load",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "32": {
+    "id": 32,
+    "name": "Coolant Temperature",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "33": {
+    "id": 33,
+    "name": "Short Fuel Trim",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "34": {
+    "id": 34,
+    "name": "Fuel pressure",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "35": {
+    "id": 35,
+    "name": "Intake MAP",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "36": {
+    "id": 36,
+    "name": "Engine RPM",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "37": {
+    "id": 37,
+    "name": "Vehicle Speed",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "38": {
+    "id": 38,
+    "name": "Timing Advance",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "39": {
+    "id": 39,
+    "name": "Intake Air Temperature",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "40": {
+    "id": 40,
+    "name": "MAF",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "41": {
+    "id": 41,
+    "name": "Throttle Position",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "42": {
+    "id": 42,
+    "name": "Runtime since engine start",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "43": {
+    "id": 43,
+    "name": "Distance Traveled MIL On",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "44": {
+    "id": 44,
+    "name": "Relative Fuel Rail Pressure",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "45": {
+    "id": 45,
+    "name": "Direct Fuel Rail Pressure",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "46": {
+    "id": 46,
+    "name": "Commanded EGR",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "47": {
+    "id": 47,
+    "name": "EGR Error",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "48": {
+    "id": 48,
+    "name": "Fuel Level",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "49": {
+    "id": 49,
+    "name": "Distance Since Codes Clear",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "50": {
+    "id": 50,
+    "name": "Barometic Pressure",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "51": {
+    "id": 51,
+    "name": "Control Module Voltage",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "52": {
+    "id": 52,
+    "name": "Absolute Load Value",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "53": {
+    "id": 53,
+    "name": "Ambient Air Temperature",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "54": {
+    "id": 54,
+    "name": "Time Run With MIL On",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "55": {
+    "id": 55,
+    "name": "Time Since Codes Cleared",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "56": {
+    "id": 56,
+    "name": "Absolute Fuel Rail Pressure",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "57": {
+    "id": 57,
+    "name": "Hybrid battery pack life",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "58": {
+    "id": 58,
+    "name": "Engine Oil Temperature",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "59": {
+    "id": 59,
+    "name": "Fuel injection timing",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "60": {
+    "id": 60,
+    "name": "Fuel Rate",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "61": {
+    "id": 61,
+    "name": "Geofence zone 06",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "62": {
+    "id": 62,
+    "name": "Geofence zone 07",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "63": {
+    "id": 63,
+    "name": "Geofence zone 08",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "64": {
+    "id": 64,
+    "name": "Geofence zone 09",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "65": {
+    "id": 65,
+    "name": "Geofence zone 10",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "66": {
+    "id": 66,
+    "name": "External Voltage",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "67": {
+    "id": 67,
+    "name": "Battery Voltage",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "68": {
+    "id": 68,
+    "name": "Battery Current",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "69": {
+    "id": 69,
+    "name": "GNSS Status",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "70": {
+    "id": 70,
+    "name": "Geofence zone 11",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "71": {
+    "id": 71,
+    "name": "Dallas Temperature ID 4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "72": {
+    "id": 72,
+    "name": "Dallas Temperature 1",
+    "signed": true,
+    "bytes": 4,
+    "unit": "0.1 degrees"
+  },
+  "73": {
+    "id": 73,
+    "name": "Dallas Temperature 2",
+    "signed": true,
+    "bytes": 4,
+    "unit": "degrees"
+  },
+  "74": {
+    "id": 74,
+    "name": "Dallas Temperature 3",
+    "signed": true,
+    "bytes": 4,
+    "unit": "degrees"
+  },
+  "75": {
+    "id": 75,
+    "name": "Dallas Temperature 4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "76": {
+    "id": 76,
+    "name": "Dallas Temperature ID 1",
+    "signed": true,
+    "bytes": 4,
+    "unit": "degrees"
+  },
+  "77": {
+    "id": 77,
+    "name": "Dallas Temperature ID 2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "78": {
+    "id": 78,
+    "name": "iButton",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "79": {
+    "id": 79,
+    "name": "Dallas Temperature ID 3",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "80": {
+    "id": 80,
+    "name": "Data Mode",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "81": {
+    "id": 81,
+    "name": "Vehicle Speed",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "82": {
+    "id": 82,
+    "name": "Accelerator Pedal Position",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "83": {
+    "id": 83,
+    "name": "Fuel Consumed",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "84": {
+    "id": 84,
+    "name": "Fuel level",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "85": {
+    "id": 85,
+    "name": "Engine RPM",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "86": {
+    "id": 86,
+    "name": "BLE Humidity #1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "87": {
+    "id": 87,
+    "name": "Total Mileage",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "88": {
+    "id": 88,
+    "name": "Geofence zone 12",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "89": {
+    "id": 89,
+    "name": "Fuel level",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "90": {
+    "id": 90,
+    "name": "Door Status",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "91": {
+    "id": 91,
+    "name": "Geofence zone 13",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "92": {
+    "id": 92,
+    "name": "Geofence zone 14",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "93": {
+    "id": 93,
+    "name": "Geofence zone 15",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "94": {
+    "id": 94,
+    "name": "Geofence zone 16",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "95": {
+    "id": 95,
+    "name": "Geofence zone 17",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "96": {
+    "id": 96,
+    "name": "Geofence zone 18",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "97": {
+    "id": 97,
+    "name": "Geofence zone 19",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "98": {
+    "id": 98,
+    "name": "Geofence zone 20",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "99": {
+    "id": 99,
+    "name": "Geofence zone 21",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "100": {
+    "id": 100,
+    "name": "Program Number",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "101": {
+    "id": 101,
+    "name": "Module ID",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "102": {
+    "id": 102,
+    "name": "Engine Worktime",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "103": {
+    "id": 103,
+    "name": "Engine Worktime (counted)",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "104": {
+    "id": 104,
+    "name": "BLE Humidity #2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "105": {
+    "id": 105,
+    "name": "Total Mileage (counted)",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "106": {
+    "id": 106,
+    "name": "BLE Humidity #3",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "107": {
+    "id": 107,
+    "name": "Fuel Consumed(counted)",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "108": {
+    "id": 108,
+    "name": "BLE Humidity #4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "110": {
+    "id": 110,
+    "name": "Fuel Rate",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "111": {
+    "id": 111,
+    "name": "AdBlue Level",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "112": {
+    "id": 112,
+    "name": "AdBlue Level",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "113": {
+    "id": 113,
+    "name": "Battery Level",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "114": {
+    "id": 114,
+    "name": "Engine Load",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "115": {
+    "id": 115,
+    "name": "Engine Temperature",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "118": {
+    "id": 118,
+    "name": "Axle 1 Load",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "119": {
+    "id": 119,
+    "name": "Axle 2 Load",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "120": {
+    "id": 120,
+    "name": "Axle 3 Load",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "121": {
+    "id": 121,
+    "name": "Axle 4 Load",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "122": {
+    "id": 122,
+    "name": "Axle 5 Load",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "123": {
+    "id": 123,
+    "name": "Control State Flags",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "124": {
+    "id": 124,
+    "name": "Agricultural Machinery Flags",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "125": {
+    "id": 125,
+    "name": "Harvesting Time",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "126": {
+    "id": 126,
+    "name": "Area of Harvest",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "127": {
+    "id": 127,
+    "name": "LVC of Harvest",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "128": {
+    "id": 128,
+    "name": "Grain Mow Volume",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "129": {
+    "id": 129,
+    "name": "Grain Moisture",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "130": {
+    "id": 130,
+    "name": "Harvesting Drum RPM",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "131": {
+    "id": 131,
+    "name": "Gap Under Harvesting Drum",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "132": {
+    "id": 132,
+    "name": "Security State Flags",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "133": {
+    "id": 133,
+    "name": "Tacho Total Distance",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "134": {
+    "id": 134,
+    "name": "Trip Distance",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "135": {
+    "id": 135,
+    "name": "Tacho Vehicle Speed",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "136": {
+    "id": 136,
+    "name": "Tacho Driver Card Presence",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "137": {
+    "id": 137,
+    "name": "Driver 1 States",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "138": {
+    "id": 138,
+    "name": "Driver 2 States",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "139": {
+    "id": 139,
+    "name": "Driver 1 Driving Time",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "140": {
+    "id": 140,
+    "name": "Driver 2 Driving Time",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "141": {
+    "id": 141,
+    "name": "Driver 1 Break Time",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "142": {
+    "id": 142,
+    "name": "Driver 2 Break Time",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "143": {
+    "id": 143,
+    "name": "Driver 1 Activity Duration",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "144": {
+    "id": 144,
+    "name": "Driver 2 Activity Duration",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "145": {
+    "id": 145,
+    "name": "Driver 1 Driving Time",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "146": {
+    "id": 146,
+    "name": "Driver 2 Driving Time",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "147": {
+    "id": 147,
+    "name": "Driver 1 ID High",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "148": {
+    "id": 148,
+    "name": "Driver 1 ID Low",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "149": {
+    "id": 149,
+    "name": "Driver 2 ID High",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "150": {
+    "id": 150,
+    "name": "Driver 2 ID Low",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "151": {
+    "id": 151,
+    "name": "Battery Temperature",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "152": {
+    "id": 152,
+    "name": "Battery Level",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "153": {
+    "id": 153,
+    "name": "Geofence zone 22",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "154": {
+    "id": 154,
+    "name": "Geofence zone 23",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "155": {
+    "id": 155,
+    "name": "Geofence zone 01",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "156": {
+    "id": 156,
+    "name": "Geofence zone 02",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "157": {
+    "id": 157,
+    "name": "Geofence zone 03",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "158": {
+    "id": 158,
+    "name": "Geofence zone 04",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "159": {
+    "id": 159,
+    "name": "Geofence zone 05",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "160": {
+    "id": 160,
+    "name": "DTC Faults Count",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "161": {
+    "id": 161,
+    "name": "Slope of Arm",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "162": {
+    "id": 162,
+    "name": "Rotation of Arm",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "163": {
+    "id": 163,
+    "name": "Eject of Arm",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "164": {
+    "id": 164,
+    "name": "Horizontal Distance Arm",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "165": {
+    "id": 165,
+    "name": "Height Arm Above Ground",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "166": {
+    "id": 166,
+    "name": "Drill RPM",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "167": {
+    "id": 167,
+    "name": "Spread Salt",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "168": {
+    "id": 168,
+    "name": "Battery Voltage",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "169": {
+    "id": 169,
+    "name": "Spread Fine Grained Salt",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "170": {
+    "id": 170,
+    "name": "Coarse Grained Salt",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "171": {
+    "id": 171,
+    "name": "Spread DiMix",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "172": {
+    "id": 172,
+    "name": "Spread Coarse Grained Calcium",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "173": {
+    "id": 173,
+    "name": "Spread Calcium Chloride",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "174": {
+    "id": 174,
+    "name": "Spread Sodium Chloride",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "175": {
+    "id": 175,
+    "name": "Auto Geofence",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "176": {
+    "id": 176,
+    "name": "Spread Magnesium Chloride",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "177": {
+    "id": 177,
+    "name": "Amount Of Spread Gravel",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "178": {
+    "id": 178,
+    "name": "Amount Of Spread Sand",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "179": {
+    "id": 179,
+    "name": "Digital Output 1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "180": {
+    "id": 180,
+    "name": "Digital Output 2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "181": {
+    "id": 181,
+    "name": "GNSS PDOP",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "182": {
+    "id": 182,
+    "name": "GNSS HDOP",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "183": {
+    "id": 183,
+    "name": "Width Pouring Left",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "184": {
+    "id": 184,
+    "name": "Width Pouring Right",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "185": {
+    "id": 185,
+    "name": "Salt Spreader Working Hours",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "186": {
+    "id": 186,
+    "name": "Distance During Salting",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "187": {
+    "id": 187,
+    "name": "Load Weight",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "188": {
+    "id": 188,
+    "name": "Retarder Load",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "189": {
+    "id": 189,
+    "name": "Cruise Time",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "190": {
+    "id": 190,
+    "name": "Geofence zone 24",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "191": {
+    "id": 191,
+    "name": "Geofence zone 25",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "192": {
+    "id": 192,
+    "name": "Geofence zone 26",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "193": {
+    "id": 193,
+    "name": "Geofence zone 27",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "194": {
+    "id": 194,
+    "name": "Geofence zone 28",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "195": {
+    "id": 195,
+    "name": "Geofence zone 29",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "196": {
+    "id": 196,
+    "name": "Geofence zone 30",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "197": {
+    "id": 197,
+    "name": "Geofence zone 31",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "198": {
+    "id": 198,
+    "name": "Geofence zone 32",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "199": {
+    "id": 199,
+    "name": "Trip Odometer",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "200": {
+    "id": 200,
+    "name": "Sleep Mode",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "201": {
+    "id": 201,
+    "name": "LLS 1 Fuel Level",
+    "signed": true,
+    "bytes": 2,
+    "unit": "liters"
+  },
+  "202": {
+    "id": 202,
+    "name": "LLS 1 Fuel temperature",
+    "signed": true,
+    "bytes": 1,
+    "unit": "degrees"
+  },
+  "203": {
+    "id": 203,
+    "name": "LLS 2 Fuel Level",
+    "signed": true,
+    "bytes": 2,
+    "unit": "liters"
+  },
+  "204": {
+    "id": 204,
+    "name": "LLS 2 Temperature",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "205": {
+    "id": 205,
+    "name": "GSM Cell ID",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "206": {
+    "id": 206,
+    "name": "GSM Area Code",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "207": {
+    "id": 207,
+    "name": "RFID",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "208": {
+    "id": 208,
+    "name": "Geofence zone 33",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "209": {
+    "id": 209,
+    "name": "Geofence zone 34",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "210": {
+    "id": 210,
+    "name": "LLS 3 Fuel Level",
+    "signed": true,
+    "bytes": 2,
+    "unit": "liters"
+  },
+  "211": {
+    "id": 211,
+    "name": "LLS 3 Temperature",
+    "signed": true,
+    "bytes": 1,
+    "unit": "degrees"
+  },
+  "212": {
+    "id": 212,
+    "name": "LLS 4 Fuel Level",
+    "signed": true,
+    "bytes": 2,
+    "unit": "liters"
+  },
+  "213": {
+    "id": 213,
+    "name": "LLS 4 Temperature",
+    "signed": true,
+    "bytes": 1,
+    "unit": "degrees"
+  },
+  "214": {
+    "id": 214,
+    "name": "LLS 5 Fuel Level",
+    "signed": true,
+    "bytes": 2,
+    "unit": "liters"
+  },
+  "215": {
+    "id": 215,
+    "name": "LLS 5 Temperature",
+    "signed": true,
+    "bytes": 1,
+    "unit": "degrees"
+  },
+  "216": {
+    "id": 216,
+    "name": "Geofence zone 35",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "217": {
+    "id": 217,
+    "name": "Geofence zone 36",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "218": {
+    "id": 218,
+    "name": "Geofence zone 37",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "219": {
+    "id": 219,
+    "name": "Geofence zone 38",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "220": {
+    "id": 220,
+    "name": "Geofence zone 39",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "221": {
+    "id": 221,
+    "name": "Geofence zone 40",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "222": {
+    "id": 222,
+    "name": "Geofence zone 41",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "223": {
+    "id": 223,
+    "name": "Geofence zone 42",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "224": {
+    "id": 224,
+    "name": "Geofence zone 43",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "225": {
+    "id": 225,
+    "name": "Geofence zone 44",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "226": {
+    "id": 226,
+    "name": "Geofence zone 45",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "227": {
+    "id": 227,
+    "name": "Geofence zone 46",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "228": {
+    "id": 228,
+    "name": "Geofence zone 47",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "229": {
+    "id": 229,
+    "name": "Geofence zone 48",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "230": {
+    "id": 230,
+    "name": "Geofence zone 49",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "231": {
+    "id": 231,
+    "name": "Geofence zone 50",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "232": {
+    "id": 232,
+    "name": "CNG status",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "233": {
+    "id": 233,
+    "name": "CNG used",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "234": {
+    "id": 234,
+    "name": "CNG level",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "235": {
+    "id": 235,
+    "name": "Engine Oil Level",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "236": {
+    "id": 236,
+    "name": "Alarm",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "237": {
+    "id": 237,
+    "name": "Network Type",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "238": {
+    "id": 238,
+    "name": "User ID",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "239": {
+    "id": 239,
+    "name": "Ignition",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "240": {
+    "id": 240,
+    "name": "Movement",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "241": {
+    "id": 241,
+    "name": "Active GSM Operator",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "243": {
+    "id": 243,
+    "name": "Green driving event duration",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "244": {
+    "id": 244,
+    "name": "DIN2/AIN2 spec event",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "246": {
+    "id": 246,
+    "name": "Towing",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "247": {
+    "id": 247,
+    "name": "Crash detection",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "248": {
+    "id": 248,
+    "name": "Immobilizer",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "249": {
+    "id": 249,
+    "name": "Jamming",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "250": {
+    "id": 250,
+    "name": "Trip",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "251": {
+    "id": 251,
+    "name": "Idling",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "252": {
+    "id": 252,
+    "name": "Unplug",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "253": {
+    "id": 253,
+    "name": "Green driving type",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "254": {
+    "id": 254,
+    "name": "Green Driving Value",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "255": {
+    "id": 255,
+    "name": "Over Speeding",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "256": {
+    "id": 256,
+    "name": "VIN",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "257": {
+    "id": 257,
+    "name": "Crash trace data",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "258": {
+    "id": 258,
+    "name": "EcoMaximum",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "259": {
+    "id": 259,
+    "name": "EcoAverage",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "260": {
+    "id": 260,
+    "name": "EcoDuration",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "263": {
+    "id": 263,
+    "name": "BT Status",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "264": {
+    "id": 264,
+    "name": "Barcode ID",
+    "data_type": "ASCII",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "269": {
+    "id": 269,
+    "name": "Escort LLS Temperature #1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "270": {
+    "id": 270,
+    "name": "Escort LLS Fuel level #1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "271": {
+    "id": 271,
+    "name": "Escort LLS Battery Voltage #1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "272": {
+    "id": 272,
+    "name": "Escort LLS Temperature #2",
+    "signed": true,
+    "bytes": 2,
+    "unit": "degrees"
+  },
+  "273": {
+    "id": 273,
+    "name": "Escort LLS Fuel level #2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "274": {
+    "id": 274,
+    "name": "Escort LLS Battery Voltage #2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "275": {
+    "id": 275,
+    "name": "Escort LLS Temperature #3",
+    "signed": true,
+    "bytes": 2,
+    "unit": "degrees"
+  },
+  "276": {
+    "id": 276,
+    "name": "BLE Fuel Level #3",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "277": {
+    "id": 277,
+    "name": "Escort LLS Battery Voltage #3",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "278": {
+    "id": 278,
+    "name": "Escort LLS Temperature #4",
+    "signed": true,
+    "bytes": 2,
+    "unit": "degrees"
+  },
+  "279": {
+    "id": 279,
+    "name": "BLE Fuel Level #4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "280": {
+    "id": 280,
+    "name": "Escort LLS Battery Voltage #4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "281": {
+    "id": 281,
+    "name": "Fault Codes",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "282": {
+    "id": 282,
+    "name": "DTC Faults code",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "283": {
+    "id": 283,
+    "name": "Driving State",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "284": {
+    "id": 284,
+    "name": "Driving Records",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "285": {
+    "id": 285,
+    "name": "Blood alcohol content",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "303": {
+    "id": 303,
+    "name": "Instant Movement",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "304": {
+    "id": 304,
+    "name": "Vehicle Range on Battery",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "306": {
+    "id": 306,
+    "name": "BLE Fuel Frequency #1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "307": {
+    "id": 307,
+    "name": "BLE Fuel Frequency #2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "308": {
+    "id": 308,
+    "name": "BLE Fuel Frequency #3",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "309": {
+    "id": 309,
+    "name": "BLE Fuel Frequency #4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "317": {
+    "id": 317,
+    "name": "Crash event counter",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "327": {
+    "id": 327,
+    "name": "UL202-02 Sensor Fuel level",
+    "signed": true,
+    "bytes": 2,
+    "unit": "mm"
+  },
+  "330": {
+    "id": 330,
+    "name": "Trip trace event",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "331": {
+    "id": 331,
+    "name": "BLE 1 Custom #1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "332": {
+    "id": 332,
+    "name": "BLE 2 Custom #1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "333": {
+    "id": 333,
+    "name": "BLE 3 Custom #1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "334": {
+    "id": 334,
+    "name": "BLE 4 Custom #1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "335": {
+    "id": 335,
+    "name": "BLE Luminosity #1",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "336": {
+    "id": 336,
+    "name": "BLE Luminosity #2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "337": {
+    "id": 337,
+    "name": "BLE Luminosity #3",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "338": {
+    "id": 338,
+    "name": "BLE Luminosity #4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "380": {
+    "id": 380,
+    "name": "Digital output 3",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "381": {
+    "id": 381,
+    "name": "Ground Sense",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "385": {
+    "id": 385,
+    "name": "Beacon",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "387": {
+    "id": 387,
+    "name": "ISO6709  Coordinates",
+    "data_type": "HEX",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "389": {
+    "id": 389,
+    "name": "OBD OEM Total Mileage",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "390": {
+    "id": 390,
+    "name": "OBD OEM Fuel Level",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "391": {
+    "id": 391,
+    "name": "Private mode",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "403": {
+    "id": 403,
+    "name": "Driver Name",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "404": {
+    "id": 404,
+    "name": "Driver card license type",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "405": {
+    "id": 405,
+    "name": "Driver Gender",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "406": {
+    "id": 406,
+    "name": "Driver Card ID",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "407": {
+    "id": 407,
+    "name": "Driver Card Issue Year",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "408": {
+    "id": 408,
+    "name": "Driver Card Issue Year",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "409": {
+    "id": 409,
+    "name": "Driver Status Event",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "463": {
+    "id": 463,
+    "name": "BLE 1 Custom #2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "464": {
+    "id": 464,
+    "name": "BLE 1 Custom #3",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "465": {
+    "id": 465,
+    "name": "BLE 1 Custom #4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "466": {
+    "id": 466,
+    "name": "BLE 1 Custom #5",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "467": {
+    "id": 467,
+    "name": "BLE 2 Custom #2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "468": {
+    "id": 468,
+    "name": "BLE 2 Custom #3",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "469": {
+    "id": 469,
+    "name": "BLE 2 Custom #4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "470": {
+    "id": 470,
+    "name": "BLE 2 Custom #5",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "471": {
+    "id": 471,
+    "name": "BLE 3 Custom #2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "472": {
+    "id": 472,
+    "name": "BLE 3 Custom #3",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "473": {
+    "id": 473,
+    "name": "BLE 3 Custom #4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "474": {
+    "id": 474,
+    "name": "BLE 3 Custom #5",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "475": {
+    "id": 475,
+    "name": "BLE 4 Custom #2",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "476": {
+    "id": 476,
+    "name": "BLE 4 Custom #3",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "477": {
+    "id": 477,
+    "name": "BLE 4 Custom #4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "478": {
+    "id": 478,
+    "name": "BLE 4 Custom #5",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "483": {
+    "id": 483,
+    "name": "UL202-02 Sensor Status",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "517": {
+    "id": 517,
+    "name": "SecurityStateFlags_P4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "518": {
+    "id": 518,
+    "name": "ControlStateFlags_P4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "519": {
+    "id": 519,
+    "name": "IndicatorStateFlags_P4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "520": {
+    "id": 520,
+    "name": "AgriculturalStateFlags_P4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "521": {
+    "id": 521,
+    "name": "UtilityStateFlags_P4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  },
+  "522": {
+    "id": 522,
+    "name": "CisternStateFlags_P4",
+    "signed": false,
+    "bytes": "unknown",
+    "unit": ""
+  }
+}
