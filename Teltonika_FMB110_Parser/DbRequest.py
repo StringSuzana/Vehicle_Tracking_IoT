@@ -16,19 +16,19 @@ class DbRequest:
     def avlDataToDbFormat(self, avl):
         coordinate_precision = 10000000
         db_format = {
-            "deviceId": avl['imei'],
-            "coordinates": {
+            "imei": avl['imei'],
+            "label": avl['imei'],
+            "conditions": {
                 "lat": str(avl['lat'] / coordinate_precision),
                 "long": str(avl['lon'] / coordinate_precision),
-                "speed": int(avl['speed'])
-            },
-            "inputs": {
+                "speed": int(avl['speed']),
                 "dallas_temperature_1": (avl['io_data'].get('Dallas Temperature 1') or 0),
-                "external_voltage": (avl['io_data'].get('External Voltage') or 0) / 1000
-            },
-            "signal": {
-                "GSM Signal": int(avl['io_data'].get('GSM Signal') or 0),
-                "GSM Cell ID": avl['io_data'].get('GSM Cell ID')
+                "gsp_signal": int(avl['io_data'].get('GSM Signal') or 0),
+                "trip_odometer": avl['io_data'].get('Trip Odometer'),
+                "total_odometer": avl['io_data'].get('Total Odometer'),
+                "time": avl['received_time'],
+                "imei": avl['imei'],
+                # "external_voltage": (avl['io_data'].get('External Voltage') or 0) / 1000,
             }
         }
         print(db_format)
