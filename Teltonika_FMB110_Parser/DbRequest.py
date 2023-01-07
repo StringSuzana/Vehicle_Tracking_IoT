@@ -15,21 +15,39 @@ class DbRequest:
 
     def avlDataToDbFormat(self, avl):
         coordinate_precision = 10000000
-        db_format = {
+        # CREATE TABLE vehicleType (
+        # id serial primary key,
+        # name varchar(100)
+        # )
+        # CREATE TABLE vehicle (
+        #    id serial primary key,
+        #    imei varchar(100) NOT NULL,
+        #    label varchar(200) NOT NULL,
+        #    vehicle_type integer REFERENCES vehicleType(id),
+        #    registration varchar(30) NOT NULL
+        # );
+
+        db_vehicleType_table = {
+            "id": 1,
+            "name": "CAR"
+        }
+        db_vehicle_table = {
             "imei": avl['imei'],
             "label": avl['imei'],
-            "conditions": {
-                "lat": str(avl['lat'] / coordinate_precision),
-                "long": str(avl['lon'] / coordinate_precision),
-                "speed": int(avl['speed']),
-                "dallas_temperature_1": (avl['io_data'].get('Dallas Temperature 1') or 0),
-                "gsp_signal": int(avl['io_data'].get('GSM Signal') or 0),
-                "trip_odometer": avl['io_data'].get('Trip Odometer'),
-                "total_odometer": avl['io_data'].get('Total Odometer'),
-                "time": avl['received_time'],
-                "imei": avl['imei'],
-                # "external_voltage": (avl['io_data'].get('External Voltage') or 0) / 1000,
-            }
+            "vehicle_type": 1,
+            "registration": "ZG 000 ZG"
+        }
+        db_conditions_table = {
+            "lat": str(avl['lat'] / coordinate_precision),
+            "long": str(avl['lon'] / coordinate_precision),
+            "speed": int(avl['speed']),
+            "dallas_temperature_1": (avl['io_data'].get('Dallas Temperature 1') or 0),
+            "gsp_signal": int(avl['io_data'].get('GSM Signal') or 0),
+            "trip_odometer": avl['io_data'].get('Trip Odometer'),
+            "total_odometer": avl['io_data'].get('Total Odometer'),
+            "time": avl['received_time'],
+            "vehicle_id": avl['imei'],
+            # "external_voltage": (avl['io_data'].get('External Voltage') or 0) / 1000,
         }
         print(db_format)
         return db_format
