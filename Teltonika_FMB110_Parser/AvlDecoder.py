@@ -1,6 +1,7 @@
 import math
 import json
 
+from DbRequest import DbRequest
 from TimeUtils import readTime
 from TimeUtils import unixToLocal
 from IoDecoder import IoElements
@@ -81,7 +82,6 @@ class AvlDecoder:
             for i in range(0, total_entries_size, division_size):
                 self.avl_entries.append(avl_data_entries[i:i + division_size])  # splitting into chunks
 
-            self.d_time_local = unixToLocal(self.d_time_unix)  # device time local
 
             for entry in self.avl_entries:
                 try:
@@ -102,10 +102,11 @@ class AvlDecoder:
     def readAvlDataEntry(self, entry):
         """
         AVL DATA entry
-                without preamble, data_field, codec_id, number_of_data_1 at the beginning 
+                without preamble, data_field, codec_id, number_of_data_1 at the beginning
                 and without number_of_data_2 and crc at the end
         """
         self.d_time_unix = int(entry[0:16], 16)  # timestamp from device
+        self.d_time_local = unixToLocal(self.d_time_unix)  # device time local
         self.priority = int(entry[16:18], 16)  # device data priority
 
         # GPS element
@@ -190,6 +191,7 @@ class AvlDecoder:
 
 
 if __name__ == "__main__":
+    post_requester = DbRequest()
 
     with open('data/raw_hex.txt', 'r') as r:
         lines = r.readlines()
@@ -199,7 +201,8 @@ if __name__ == "__main__":
         results = avl.decodeAVL(packet)
         valid_res_generator = [p for p in results if p != ERROR_VALUE]
         for res in valid_res_generator:
-            res['imei'] = '352093084336436'
+            res['imei'] = "352093084336436"
+            post_requester.save(res)
             with open('data/decoded_avl.txt', 'a') as a:
                 a.write(json.dumps(res))
                 a.write('\n')

@@ -4,16 +4,19 @@ import binascii
 import time
 import traceback
 
-from AvlDecoder import AvlDecoder
+from AvlDecoder import AvlDecoder, ERROR_VALUE
 from DbRequest import DbRequest
 from TimeUtils import readTime
+from Writer import Write
 
-avl_decoder = AvlDecoder()
+
 post_requester = DbRequest()
 
 
 class TCPServer:
     def __init__(self, port):
+        self.number_of_data_resp = None
+
         self.port = port
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -35,23 +38,25 @@ class TCPServer:
             try:
                 data = conn.recv(1024)
                 if (data):
-                    received = self.rawToHex(data)
-                    with open('data/raw_hex.txt', 'a+') as w:
-                        w.writelines(received.decode('utf-8') + '\n')
-                    with open('data/raw_bytes.txt', 'a') as w:
-                        for b in data:
-                            w.write(bin(b)[2:].zfill(8))
-                        w.writelines('\n')
-                    avl_data_packet = avl_decoder.decodeAVL(received.decode('utf-8'))
+                    avl_decoder = AvlDecoder()
+
+                    received = TCPServer.rawToHex(data)
+                    Write.dataAsHex(received)
+                    res = avl_decoder.decodeAVL(received.decode('utf-8'))
+                    valid_res_generator = [p for p in res if p != ERROR_VALUE]
                     print(f"| TIME | Received packet {readTime()}")
-                    for packet in avl_data_packet:
+                    anything = 0
+                    for packet in valid_res_generator:
                         packet['imei'] = imei  # IMEI_len(2 bytes) | IMEI_val(X bytes)
                         print("avl_data_packet", packet)
-                        self.number_of_data_resp = packet['number_of_data_1']
-                    resp = self.mResponse(self.number_of_data_resp)
+                        post_requester.save(packet)
+
+                    self.number_of_data_resp = avl_decoder.number_of_data_1
+                    resp = TCPServer.mResponse(self.number_of_data_resp)
                     conn.send(resp)
-                    time.sleep(10)
+                    time.sleep(2)
                 else:
+                    print("break")
                     break
             except Exception as e:
                 print(traceback.format_exc())
@@ -77,15 +82,17 @@ class TCPServer:
                 conn.close()
                 break
 
-    def rawToHex(self, raw):
+    @staticmethod
+    def rawToHex(raw):
         decoded = binascii.hexlify(raw)
         return decoded
 
-    def mResponse(self, data):
-        return data.to_bytes(4, byteorder='big')
+    @staticmethod
+    def mResponse(response):
+        return response.to_bytes(4, byteorder='big')
 
 
 if __name__ == '__main__':
-    port = 5555
+    port = 5560
     data = TCPServer(port)
     data.tcpServer()
