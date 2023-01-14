@@ -1,38 +1,74 @@
 import psycopg2
+import os
 
-# TIMESCALE
-CONNECTION = "postgres://username:password@host:port/dbname"
+from datetime import datetime
 
 
 class DbRequest:
     def __init__(self):
         self.post_url = ""
+        self.connection = psycopg2.connect(
+            host=os.environ.get("SMARTINO_DB_HOST"),
+            port=os.environ.get("SMARTINO_DB_PORT"),
+            user=os.environ.get("SMARTINO_DB_USER"),
+            password=os.environ.get("SMARTINO_DB_PWD"),
+            database=os.environ.get("SMARTINO_DB_NAME")
+        )
 
-    def save(self, data) -> str:
-        print("io", data)
+        self.cursor = self.connection.cursor()
+
+    def save(self, data):
+        print("data:", data)
         self.avlDataToDbFormat(data)
-        return "Database Response"
 
     def avlDataToDbFormat(self, avl):
+        time = datetime.now()
+        time_formatted = time.strftime("%Y-%m-%d %H:%M:%S")
         coordinate_precision = 10000000
-        db_format = {
-            "deviceId": avl['imei'],
-            "coordinates": {
-                "lat": str(avl['lat'] / coordinate_precision),
-                "long": str(avl['lon'] / coordinate_precision),
-                "speed": int(avl['speed'])
-            },
-            "inputs": {
-                "dallas_temperature_1": (avl['io_data'].get('Dallas Temperature 1') or 0),
-                "external_voltage": (avl['io_data'].get('External Voltage') or 0) / 1000
-            },
-            "signal": {
-                "GSM Signal": int(avl['io_data'].get('GSM Signal') or 0),
-                "GSM Cell ID": avl['io_data'].get('GSM Cell ID')
-            }
+
+        db_vehicleType_table = {
+            "id": 10,
+            "name": "CAR"
         }
-        print(db_format)
-        return db_format
+        db_vehicle_table = {
+            "imei": avl['imei'],
+            "label": avl['imei'],
+            "vehicle_type": 10,
+            "registration": "ZG 000 ZG"
+        }
+        db_conditions_table = {
+            "lat": str(avl['lat'] / coordinate_precision),
+            "long": str(avl['lon'] / coordinate_precision),
+            "speed": int(avl['speed']),
+            "dallas_temperature_1": (avl['io_data'].get('Dallas Temperature 1') or 0),
+            "gsm_signal": int(avl['io_data'].get('GSM Signal') or 0),
+            "trip_odometer": avl['io_data'].get('Trip Odometer'),
+            "total_odometer": avl['io_data'].get('Total Odometer'),
+            "time": avl['d_time_local'],  # avl['received_time'],
+            "vehicle_id": avl['imei'],
+            # "external_voltage": (avl['io_data'].get('External Voltage') or 0) / 1000,
+        }
+
+        print(db_conditions_table)
+
+        # self.cursor.execute("INSERT INTO vehicleType (id, name) VALUES (%(id)s, %(name)s)", db_vehicleType_table)
+        # Insert data into the vehicle table
+        # self.cursor.execute(
+        #    "INSERT INTO vehicle (imei, label, vehicle_type, registration) VALUES (%(imei)s, %(label)s, %(vehicle_type)s,
+        #    %(registration)s)", db_vehicle_table)
+
+        self.cursor.execute(
+            "INSERT INTO conditions (lat, long, speed, dallas_temperature_1, gsm_signal, trip_odometer, total_odometer, time, vehicle_id)"
+            " VALUES "
+            "(%(lat)s, %(long)s, %(speed)s, %(dallas_temperature_1)s, %(gsm_signal)s, %(trip_odometer)s, %(total_odometer)s,"
+            " %(time)s, %(vehicle_id)s)",
+            db_conditions_table)
+
+        self.connection.commit()
+
+    def closeConnection(self):
+        self.cursor.close()
+        self.connection.close()
 
 
 if __name__ == "__main__":
@@ -46,6 +82,5 @@ if __name__ == "__main__":
                         "Dallas Temperature 1": 90, "Dallas Temperature ID 1": 17871152627483934504},
             "imei": "352093084336436"}
 
-    a = DbRequest()
-    ready = a.save(data)
-    print(ready)
+    db = DbRequest()
+    db.save(data)

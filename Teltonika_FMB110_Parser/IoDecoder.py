@@ -87,7 +87,7 @@ class IoElements:
 
     def read_num_of_total_io(self):
         self.num_of_total_io.value = int(self.io_data_hexstring[2:4], 16)
-        print(f" | Number of total IOs {self.num_of_total_io.value}")
+        # print(f" | Number of total IOs {self.num_of_total_io.value}")
 
     def read_1byte_elements(self) -> IoResult:
         # io_data_hexstring = event_io (2bytes) | num_of_total_io (2bytes) | [ count_of_1_byte_io (2bytes) ] | ...
@@ -104,8 +104,9 @@ class IoElements:
 
         n1s_data = self.io_data_hexstring[_1byte_ios_start:_1byte_ios_end]
 
-        self._1byte_io_values = self.decode_n_byte_io(io_data=n1s_data,
-                                                      one_io_length=one_1byte_packet_length)
+        self._1byte_io_values = self.decode_n_byte_io(
+            io_data=n1s_data,
+            one_io_length=one_1byte_packet_length)
         self.io_result['n1'] = self._1byte_io_values
 
         if self.count_of_1_byte_io.value == self.num_of_total_io.value:
@@ -129,8 +130,9 @@ class IoElements:
 
         n2s_data = self.io_data_hexstring[_2byte_ios_start:_2byte_ios_end]
 
-        self._2byte_io_values = self.decode_n_byte_io(io_data=n2s_data,
-                                                      one_io_length=one_2byte_packet_length)
+        self._2byte_io_values = self.decode_n_byte_io(
+            io_data=n2s_data,
+            one_io_length=one_2byte_packet_length)
         self.io_result['n2'] = self._2byte_io_values
 
         if self.count_of_1_byte_io.value + self.count_of_2_byte_io.value == self.num_of_total_io.value:
@@ -155,8 +157,9 @@ class IoElements:
 
         n4s_data = self.io_data_hexstring[_4byte_ios_start:_4byte_ios_end]
 
-        self._4byte_io_values = self.decode_n_byte_io(io_data=n4s_data,
-                                                      one_io_length=one_4byte_packet_length)
+        self._4byte_io_values = self.decode_n_byte_io(
+            io_data=n4s_data,
+            one_io_length=one_4byte_packet_length)
         self.io_result['n4'] = self._4byte_io_values
 
         if (self.count_of_1_byte_io.value +
@@ -186,8 +189,9 @@ class IoElements:
 
         n8s_data = self.io_data_hexstring[_8byte_ios_start:_8byte_ios_end]
 
-        self._8byte_io_values = self.decode_n_byte_io(io_data=n8s_data,
-                                                      one_io_length=one_8byte_packet_length)
+        self._8byte_io_values = self.decode_n_byte_io(
+            io_data=n8s_data,
+            one_io_length=one_8byte_packet_length)
         self.io_result['n8'] = self._8byte_io_values
 
         return IoResult.END
